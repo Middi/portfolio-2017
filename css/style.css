@@ -58,4 +58,40 @@ button {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400; }
 
+h1 {
+  font-size: 1.8rem;
+  color: white; }
+
+body {
+  background-color: #fafafa; }
+
+#hero {
+  height: 920px;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/hero-img.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.text-content {
+  text-align: center;
+  height: 520px;
+  width: 560px; }
+
+#portfolio {
+  width: 1000px;
+  background-color: white;
+  height: 700px;
+  margin: -400px auto;
+  border: 1px solid #f4f4f4;
+  border-radius: 4px; }
+
 /*----------  Break Point 1 - 1200px  ----------*/

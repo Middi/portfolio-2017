@@ -8,6 +8,39 @@
 @import "colors";
 @import "typography";
 
+body {
+    background-color: $bg;
+}
 
+#hero {
+    height:     920px;
+    background-position: top center;
+    background-size:          cover;
+    background-repeat:    no-repeat;
+    background-image: url('../images/hero-img.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    
+}
+
+.text-content {
+    text-align: center;
+    height: 520px;
+    width: 560px;
+}
+
+#portfolio {
+    width: 1000px;
+    background-color: white;
+    height: 700px;
+    margin: -400px auto;
+    border: 1px solid $border;
+    border-radius: 4px;
+
+}
 
 @import "media-queries";
