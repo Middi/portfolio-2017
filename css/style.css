@@ -56,17 +56,83 @@ button {
 =============================================*/
 *, h1, h2, h3, h4, h5, h6, p, a, small {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #161616; }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   color: white; }
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  padding-bottom: 50px; }
+
+h2:after {
+  content: "";
+  position: absolute;
+  border-bottom: 6px solid #00d562;
+  width: 40px;
+  left: 50%;
+  margin-left: -20px;
+  top: 126px; }
+
+h3 {
+  font-size: 1.4rem; }
+
+h5 {
+  font-size: 14px; }
+
+p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 24px; }
+
+small {
+  font-size: 12px; }
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px; }
+
+.card {
+  height: 300px;
+  width: 240px;
+  border: 1px solid #e0e0e0;
+  margin: 15px;
+  box-shadow: 0px 0px 14px 2px #cccccc;
+  text-align: left;
+  overflow: hidden;
+  cursor: pointer; }
+  .card img {
+    width: 240px; }
+  .card h5 {
+    padding: 30px 20px 0 20px; }
+  .card small {
+    padding: 10px 20px; }
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 14px 4px #c1c1c1; }
+
+.tags {
+  border-top: 2px solid #e0e0e0; }
 
 body {
   background-color: #fafafa; }
 
 #hero {
-  height: 920px;
+  height: 1000px;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -79,19 +145,52 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  position: relative; }
+
+.container {
+  max-width: 600px;
+  margin: 0 auto; }
 
 .text-content {
   text-align: center;
-  height: 520px;
+  height: 650px;
   width: 560px; }
+  .text-content img {
+    width: 100px;
+    height: auto; }
 
 #portfolio {
-  width: 1000px;
+  max-width: 1000px;
+  position: absolute;
   background-color: white;
-  height: 700px;
-  margin: -400px auto;
-  border: 1px solid #f4f4f4;
-  border-radius: 4px; }
+  top: 460px;
+  left: 50%;
+  margin-left: -500px;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  text-align: center; }
+
+#about {
+  width: 100%;
+  background-color: white;
+  height: 500px;
+  margin-top: 320px;
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
+  text-align: center;
+  padding: 70px;
+  position: relative; }
+
+#about::before {
+  height: 45px;
+  width: 45px;
+  content: '';
+  position: absolute;
+  margin: -92px;
+  left: 50%;
+  margin-left: -22px;
+  background-image: url("../images/green-arrow.png"); }
 
 /*----------  Break Point 1 - 1200px  ----------*/
