@@ -81,7 +81,8 @@ h3 {
   font-size: 1.4rem; }
 
 h4 {
-  font-weight: 600; }
+  font-weight: 600;
+  margin-bottom: 12px; }
 
 h5 {
   font-size: 14px; }
@@ -95,7 +96,8 @@ small {
   font-size: 12px; }
 
 .light {
-  color: white; }
+  color: white;
+  margin-bottom: 0; }
   .light span {
     color: #00d562; }
 
