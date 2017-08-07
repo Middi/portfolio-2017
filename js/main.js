@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // ===========================
-    // Move
+    // Slider
     // ===========================
 
     var sliderpos = 0;
@@ -35,6 +35,7 @@ $(document).ready(function () {
             });
             console.log(sliderpos);
         }
+
         else if(sliderpos <= -980){
             $('.fa-chevron-right').css({
                 'opacity' : '0.3'
@@ -44,6 +45,7 @@ $(document).ready(function () {
             });
             console.log(sliderpos);
         }
+
         else {
             $('.fa-chevron-left').css({
                 'opacity' : '1'
@@ -54,9 +56,6 @@ $(document).ready(function () {
             console.log(sliderpos);
         }
     }
-
     pos();
-
-
 });
 
