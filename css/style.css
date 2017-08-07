@@ -80,6 +80,9 @@ h2:after {
 h3 {
   font-size: 1.4rem; }
 
+h4 {
+  font-weight: 600; }
+
 h5 {
   font-size: 14px; }
 
@@ -90,6 +93,11 @@ p {
 
 small {
   font-size: 12px; }
+
+.light {
+  color: white; }
+  .light span {
+    color: #00d562; }
 
 button {
   background: #00d562;
@@ -195,7 +203,7 @@ body {
   border-radius: 4px;
   text-align: center; }
 
-#about, #skills {
+#about, #skills, #contact {
   width: 100%;
   background-color: white;
   height: 500px;
@@ -216,10 +224,10 @@ body {
   margin-left: -22px;
   background-image: url("../images/green-arrow.png"); }
 
-#skills {
+#skills, #contact {
   background-color: #fafafa;
   margin-top: 0;
-  margin-bottom: 300px; }
+  border-top: none; }
 
 #carousel {
   margin: 0 auto;
@@ -255,5 +263,34 @@ body {
 
 li > i {
   font-size: 4rem; }
+
+#contact {
+  height: 450px;
+  background-color: white; }
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.email, .location {
+  text-align: left; }
+
+footer {
+  background-color: #525e6b;
+  height: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 /*----------  Break Point 1 - 1200px  ----------*/

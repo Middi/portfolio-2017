@@ -37,6 +37,10 @@ h3 {
     font-size: 1.4rem;
 }
 
+h4 {
+    font-weight: 600;
+}
+
 h5 {
     font-size: 14px;
 }
@@ -50,4 +54,13 @@ p {
 small {
 
     font-size: 12px;
+}
+
+
+.light {
+    color: white;
+
+    span {
+        color: $green;
+    }
 }

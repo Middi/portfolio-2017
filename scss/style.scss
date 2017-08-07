@@ -54,7 +54,7 @@ body {
     text-align: center;
 }
 
-#about, #skills {
+#about, #skills, #contact {
     width: 100%;
     background-color: white;
     height: 500px;
@@ -79,11 +79,10 @@ body {
 }
 
 
-#skills{
+#skills, #contact{
     background-color: $bg;
     margin-top: 0;
-    margin-bottom: 300px;
-
+    border-top: none;
 }
 
 #carousel {
@@ -121,4 +120,30 @@ body {
 li > i {
     font-size: 4rem;
 }
+
+
+#contact {
+    height: 450px;
+    background-color: white;
+}
+
+.contact-container {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+}
+
+.email, .location {
+    text-align: left;
+}
+
+
+footer {
+    background-color: $footer;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @import "media-queries";
