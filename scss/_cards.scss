@@ -21,8 +21,10 @@
     h5{
         padding: 30px 20px 0 20px;
     }
-    small {
-        padding: 10px 20px;
+    p {
+        margin: 0;
+        font-size: 12px;
+        padding: 10px 10px 5px 20px;
     }
 }
 
@@ -34,4 +36,7 @@
 
 .tags {
     border-top: 2px solid $border;
+    height: 100%;
+    width: 100%;
+    background-color: $green;
 }

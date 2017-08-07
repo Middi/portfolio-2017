@@ -91,6 +91,24 @@ p {
 small {
   font-size: 12px; }
 
+button {
+  background: #00d562;
+  line-height: 1em;
+  color: #161616;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 .25em 0 0;
+  border: none;
+  border-radius: 20px;
+  padding: .6em 1.5em .6em;
+  transition: all 0.2s ease; }
+  button:active {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98); }
+  button:hover {
+    background-color: #00bc56;
+    color: white; }
+
 .card-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,15 +136,20 @@ small {
     width: 240px; }
   .card h5 {
     padding: 30px 20px 0 20px; }
-  .card small {
-    padding: 10px 20px; }
+  .card p {
+    margin: 0;
+    font-size: 12px;
+    padding: 10px 10px 5px 20px; }
 
 .card:hover {
   cursor: pointer;
   box-shadow: 0px 0px 14px 4px #c1c1c1; }
 
 .tags {
-  border-top: 2px solid #e0e0e0; }
+  border-top: 2px solid #e0e0e0;
+  height: 100%;
+  width: 100%;
+  background-color: #00d562; }
 
 body {
   background-color: #fafafa; }
@@ -172,7 +195,7 @@ body {
   border-radius: 4px;
   text-align: center; }
 
-#about {
+#about, #skills {
   width: 100%;
   background-color: white;
   height: 500px;
@@ -192,5 +215,43 @@ body {
   left: 50%;
   margin-left: -22px;
   background-image: url("../images/green-arrow.png"); }
+
+#skills {
+  background-color: #fafafa;
+  margin-top: 0; }
+
+#carousel {
+  margin: 0 auto;
+  width: 710px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+#skills-slider {
+  width: 710px;
+  height: 120px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px 0; }
+
+.slides {
+  display: inline-block;
+  width: 1400px; }
+
+.slide {
+  float: left;
+  list-style-type: none;
+  width: 100px;
+  height: 100px;
+  margin: 0 19px; }
+
+li > i {
+  font-size: 4rem; }
 
 /*----------  Break Point 1 - 1200px  ----------*/
