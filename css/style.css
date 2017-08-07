@@ -218,7 +218,8 @@ body {
 
 #skills {
   background-color: #fafafa;
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 300px; }
 
 #carousel {
   margin: 0 auto;
@@ -241,8 +242,9 @@ body {
   padding: 20px 0; }
 
 .slides {
-  display: inline-block;
-  width: 1400px; }
+  display: block;
+  width: 1800px;
+  transition: all 0.4s ease-in-out; }
 
 .slide {
   float: left;

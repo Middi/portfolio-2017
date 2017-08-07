@@ -1,0 +1,1 @@
+$(document).ready(function(){var c=0;$(".left").click(function(){c+=-140,$(".slides").css({"margin-left":c+"px"})}),$(".right").click(function(){c+=140,$(".slides").css({"margin-left":c+"px"})})});

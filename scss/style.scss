@@ -82,6 +82,7 @@ body {
 #skills{
     background-color: $bg;
     margin-top: 0;
+    margin-bottom: 300px;
 
 }
 
@@ -105,8 +106,9 @@ body {
 }
 
 .slides {
-    display: inline-block;
-    width: 1400px;
+    display: block;
+    width: 1800px;
+    transition: all 0.4s ease-in-out;
 }
 
 .slide {
