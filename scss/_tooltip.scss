@@ -3,9 +3,10 @@ li {position: relative}
 li[tooltip]:before {
   position: absolute;
   width: 81px;
-  background-color: rgba(250, 250, 250, 0.5);
-  height: 80px;
-  line-height: 66px;
+  bottom: 12px;
+  color: $black;
+  height: 20px;
+  line-height: 26px;
   padding: 0 10px;
   content: attr(tooltip);
   white-space: nowrap;
