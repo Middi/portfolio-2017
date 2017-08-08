@@ -26,13 +26,14 @@ body {background-color: $bg}
 
 .container {
     max-width: 600px;
-    margin: 0 auto;
+    margin:   0 auto;
 }
 
 .text-content {
+    max-width: 590px;
+    padding: 30px;
     text-align: center;
-    width: 560px;
-    margin-top: -60px;
+    margin-top: -140px;
     img {
         width: 100px;
         height: auto;
