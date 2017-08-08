@@ -239,13 +239,21 @@ nav ul {
     display: inline-block;
     padding: 0 16px; }
     nav ul li a {
-      color: white; }
+      color: white;
+      opacity: 0.9; }
+      nav ul li a:hover {
+        opacity: 1;
+        padding-bottom: 10px;
+        border-bottom: 3px solid white; }
 
 .contact {
   color: white;
   padding: 8px 22px;
   border-radius: 20px;
   border: 1px solid white; }
+  .contact:hover {
+    padding-bottom: 8px;
+    border-bottom: 1px solid white; }
 
 /*----------  Mobile Nav  ----------*/
 #menu {
@@ -269,6 +277,8 @@ nav ul {
 #hamburger {
   height: 36px;
   width: 36px;
+  top: 20px;
+  right: 20px;
   z-index: 10;
   position: fixed; }
 
@@ -276,8 +286,7 @@ nav ul {
   display: none; }
 
 #nav-toggle span {
-  right: 30px;
-  top: 34px;
+  top: 15px;
   position: absolute; }
 
 #nav-toggle span,

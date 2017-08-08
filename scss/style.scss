@@ -40,7 +40,15 @@ nav ul {
     li {
         display: inline-block;
         padding:       0 16px;
-        a {color: white}
+        a {
+            color: white;
+            opacity:   0.9;
+            &:hover {
+                opacity: 1;
+                padding-bottom: 10px;
+                border-bottom: 3px solid white;
+            }
+        } 
     }
 }
 
@@ -49,6 +57,10 @@ nav ul {
     padding:   8px 22px;
     border-radius: 20px;
     border: 1px solid white;
+    &:hover {
+        padding-bottom: 8px;
+        border-bottom: 1px solid white;
+    }
 }
 
 
@@ -82,6 +94,8 @@ nav ul {
 #hamburger {
     height: 36px;
     width:  36px;
+    top:    20px;
+    right:  20px;
     z-index:  10;
     position: fixed;
 }
@@ -89,8 +103,7 @@ nav ul {
 .hidden, #nav-toggle {display: none}
 
 #nav-toggle span {
-    right:        30px;
-    top:          34px;
+    top: 15px;
     position: absolute;
 }
 
