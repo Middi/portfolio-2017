@@ -13,6 +13,128 @@
 
 body {background-color: $bg}
 
+
+/*=============================================
+=                Header / Nav                 =
+=============================================*/
+
+header {
+    width:  100%;
+    height: 72px;
+    background-color: none;
+    position: absolute;
+    z-index: 20;
+}
+
+
+.container-nav {
+    height:        72px;
+    padding:     0 30px;
+    margin:      0 auto;
+    display:       flex;
+    align-items: center;
+    max-width:   1000px;
+    overflow:    hidden;
+    justify-content: space-between;
+
+    .logo {
+        flex-grow: 2;
+        img {
+            width:     150px;
+            padding-top: 6px;
+        }
+    }
+}
+
+nav {
+    display: inline-block;
+    margin:        0 14px;
+    flex-shrink: 2;
+
+    ul {list-style-type: none}
+
+    li {
+        display: inline-block;
+        padding:       0 16px;
+        a {color: white}
+    }
+}
+
+
+.contact {
+    display: inline-block;
+    font-weight:      700;
+    padding:    8px 22px;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid white;
+}
+
+button, button:hover {cursor: pointer}
+
+/*----------  Mobile Nav  ----------*/
+
+#menu {
+    height: 100vh;
+    width:  100%;
+    z-index:   2; 
+    top: 0;
+    background-color: $blue;
+    position:      absolute;
+    text-align:      center;
+    padding:   100px 0 60px;
+
+    ul {list-style-type: none}
+
+    li {
+        padding: 10px 0;
+
+        a {
+            color: white;
+            font-size: 2rem;
+        }
+        &:hover {
+            background-color: darken($blue, 4);
+        }
+    }
+}
+
+#hamburger{
+    height: 36px;
+    width: 36px;
+    z-index: 10;
+}
+
+.hidden, #nav-toggle {display: none}
+
+#nav-toggle span {
+    right:        30px;
+    top:          34px;
+    position: absolute;
+}
+
+#nav-toggle span, 
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor:     pointer;
+  border-radius:  1px;
+  height:         3px;
+  width:         35px;
+  background: white;
+  position:  absolute;
+  display:      block;
+  content:         '';
+  z-index: 10;
+
+}
+
+#nav-toggle span:before {top: -10px}
+
+#nav-toggle span:after {bottom: -10px}
+
+/*=====  End of Header / Nav  ======*/
+
+
 #hero {
     height: 600px;
     display: flex;

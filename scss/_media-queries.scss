@@ -3,6 +3,11 @@
 
 @media only screen and (max-width: 880px) {
 
+    nav, .user {display: none}
+
+    #nav-toggle {display: block}
+
+
     #hero {height: 400px}
 
     .text-content {
@@ -79,6 +84,9 @@
 /*----------  Break Point 1 - 880px  ----------*/
 
 @media only screen and (max-width: 500px) {
+
+
+
     #hero {
         height: 100vh;
     }
