@@ -118,7 +118,7 @@ $(document).ready(function () {
     });
 
     $('.right').click(function () {
-        if (sliderPos > -980) {
+        if (sliderPos > -959) {
             sliderPos -= 137;
             $('.slides').css({
                 'margin-left': '' + sliderPos + 'px'
@@ -143,7 +143,7 @@ $(document).ready(function () {
             });
         }
 
-        else if (sliderPos <= -980) {
+        else if (sliderPos <= -959) {
             $('.fa-chevron-right').css({
                 'opacity': '0.3'
             });
