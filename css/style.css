@@ -408,9 +408,9 @@ nav ul {
 .slide {
   float: left;
   list-style-type: none;
-  width: 100px;
+  width: 96px;
   height: 100px;
-  margin: 0 19px; }
+  margin: 0 21px; }
 
 li > i {
   font-size: 4rem; }
