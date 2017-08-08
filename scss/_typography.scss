@@ -7,68 +7,52 @@
 *, h1, h2, h3, h4, h5, h6, p, a, small {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    color: $black;
+    color:    $black;
 }
 
 h1 {
     font-size: 1.7rem;
-    color: white;
+    color:    white;
 }
 
 h2 {
-    font-size: 2.2rem;
-    font-weight: 800;
+    font-size:    2.2rem;
+    font-weight:     800;
     padding-bottom: 54px;
 }
 
 h2:after {
   content: "";
+  width: 40px;
+  top:  116px;
+  left:   50%;
+  margin-left: -20px;
   position: absolute;
   border-bottom: 6px solid $green;
-  width: 40px;
-  left: 50%;
-  margin-left: -20px;
-  top: 116px;
 }
 
-
-h3 {
-    font-size: 1.4rem;
-}
+h3 {font-size: 1.4rem}
 
 h4 {
-    font-weight: 600;
+    font-weight:    600;
     margin-bottom: 12px;
 }
 
-h5 {
-    font-size: 14px;
-}
+h5 {font-size: 0.9rem}
 
 p {
-    font-size: 14px;
-    line-height: 1.4;
+    font-size:     1rem;
+    line-height:    1.4;
     margin-bottom: 24px;
 }
 
-small {
+small {font-size: 12px}
 
-    font-size: 12px;
-}
-
-a {
-    cursor: pointer;
-}
+a, .fa {cursor: pointer}
 
 .light {
-    color: white;
+    color:   white;
     margin-bottom: 0;
 
-    span, a {
-        color: $green;
-    }
-}
-
-.fa {
-    cursor: pointer;
+    span, a {color: $green}
 }

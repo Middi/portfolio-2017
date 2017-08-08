@@ -71,12 +71,12 @@ h2 {
 
 h2:after {
   content: "";
-  position: absolute;
-  border-bottom: 6px solid #61d45f;
   width: 40px;
+  top: 116px;
   left: 50%;
   margin-left: -20px;
-  top: 116px; }
+  position: absolute;
+  border-bottom: 6px solid #61d45f; }
 
 h3 {
   font-size: 1.4rem; }
@@ -86,17 +86,17 @@ h4 {
   margin-bottom: 12px; }
 
 h5 {
-  font-size: 14px; }
+  font-size: 0.9rem; }
 
 p {
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1.4;
   margin-bottom: 24px; }
 
 small {
   font-size: 12px; }
 
-a {
+a, .fa {
   cursor: pointer; }
 
 .light {
@@ -104,9 +104,6 @@ a {
   margin-bottom: 0; }
   .light span, .light a {
     color: #61d45f; }
-
-.fa {
-  cursor: pointer; }
 
 button {
   background: #61d45f;
