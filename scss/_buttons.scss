@@ -1,19 +1,26 @@
 button {
 	background: $green;
 	line-height: 1em;
-	color: 	  $black;
+	color: 	  white;
 	font-size:  1rem;
 	font-weight: 500;
     margin:       0 .25em 0 0;
     border: none;
-	border-radius: 20px;
-	padding:  .6em 1.5em .6em;
-	transition: all 0.2s ease;
+	border-radius: 30px;
+    padding-bottom: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 18px;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    box-shadow: rgba(98, 219, 92, 0.4) 0px 5px 10px 0px;
+    cursor: pointer;
 	
 	&:active {transform: scale(0.98)}
 	
 	&:hover {
-		background-color: darken($green, 5);
+		background-color: saturate(lighten($green, 1), 4);
+        box-shadow: desaturate(rgba(98, 219, 92, 0.4), 30) 0px 9px 10px 0px;
 		color: white;
 	}
 }

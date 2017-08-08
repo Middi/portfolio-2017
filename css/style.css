@@ -71,7 +71,7 @@ h2 {
 h2:after {
   content: "";
   position: absolute;
-  border-bottom: 6px solid #00d562;
+  border-bottom: 6px solid #5ec95f;
   width: 40px;
   left: 50%;
   margin-left: -20px;
@@ -102,27 +102,34 @@ a {
   color: white;
   margin-bottom: 0; }
   .light span, .light a {
-    color: #00d562; }
+    color: #5ec95f; }
 
 .fa {
   cursor: pointer; }
 
 button {
-  background: #00d562;
+  background: #5ec95f;
   line-height: 1em;
-  color: #161616;
+  color: white;
   font-size: 1rem;
   font-weight: 500;
   margin: 0 .25em 0 0;
   border: none;
-  border-radius: 20px;
-  padding: .6em 1.5em .6em;
-  transition: all 0.2s ease; }
+  border-radius: 30px;
+  padding-bottom: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 18px;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  box-shadow: rgba(98, 219, 92, 0.4) 0px 5px 10px 0px;
+  cursor: pointer; }
   button:active {
     -webkit-transform: scale(0.98);
             transform: scale(0.98); }
   button:hover {
-    background-color: #00bc56;
+    background-color: #5ece5f;
+    box-shadow: rgba(125, 189, 122, 0.4) 0px 9px 10px 0px;
     color: white; }
 
 .card-container {
@@ -151,7 +158,8 @@ button {
   .card img {
     width: 240px; }
   .card h5 {
-    padding: 30px 20px 0 20px; }
+    padding: 30px 20px 0 20px;
+    font-weight: 600; }
   .card p {
     margin: 0;
     font-size: 12px;
@@ -165,7 +173,7 @@ button {
   border-top: 2px solid #e0e0e0;
   height: 100%;
   width: 100%;
-  background-color: #00d562; }
+  background-color: #5ec95f; }
 
 body {
   background-color: #fafafa; }
