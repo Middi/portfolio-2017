@@ -4,64 +4,65 @@ $(document).ready(function () {
     // Slider
     // ===========================
 
-    var sliderpos = 0;
-    
+    // Click Events & CSS 
+
+    var sliderPos = 0;
+
     $('.left').click(function () {
-        if(sliderpos < 0) {
-            sliderpos += 140;
+        if (sliderPos < 0) {
+            sliderPos += 140;
             $('.slides').css({
-                'margin-left' : '' + sliderpos + 'px'
+                'margin-left': '' + sliderPos + 'px'
             });
             pos();
         }
-
         else {
             return false;
         }
     });
 
     $('.right').click(function () {
-        if(sliderpos > -980) {
-            sliderpos -= 140;
+        if (sliderPos > -980) {
+            sliderPos -= 140;
             $('.slides').css({
-                'margin-left' : '' + sliderpos + 'px'
+                'margin-left': '' + sliderPos + 'px'
             });
             pos();
+        }
+        else {
+            return false;
         }
     });
 
 
+    // Chevron color changes
 
-
-    function pos(){
-        if(sliderpos >= 0) {
+    function pos() {
+        if (sliderPos >= 0) {
             $('.fa-chevron-left').css({
-                'opacity' : '0.3'
+                'opacity': '0.3'
             });
             $('.fa-chevron-right').css({
-                'opacity' : '1'
+                'opacity': '1'
             });
-            console.log(sliderpos);
         }
 
-        else if(sliderpos <= -980){
+        else if (sliderPos <= -980) {
             $('.fa-chevron-right').css({
-                'opacity' : '0.3'
+                'opacity': '0.3'
             });
             $('.fa-chevron-left').css({
-                'opacity' : '1'
+                'opacity': '1'
             });
-            console.log(sliderpos);
         }
 
         else {
             $('.fa-chevron-left').css({
-                'opacity' : '1'
+                'opacity': '1'
             });
             $('.fa-chevron-right').css({
-                'opacity' : '1'
+                'opacity': '1'
             });
-            console.log(sliderpos);
         }
     }
     pos();
