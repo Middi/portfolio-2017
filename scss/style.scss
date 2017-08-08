@@ -19,9 +19,9 @@ body {background-color: $bg}
 =============================================*/
 
 header {
-    width:  100%;
-    position: absolute;
+    width: 100%;
     z-index: 20;
+    position: absolute;
 }
 
 .container-nav {
@@ -45,9 +45,9 @@ nav ul {
 }
 
 .contact {
-    padding:    8px 22px;
+    color:      white;
+    padding:   8px 22px;
     border-radius: 20px;
-    color: white;
     border: 1px solid white;
 }
 
@@ -55,14 +55,14 @@ nav ul {
 /*----------  Mobile Nav  ----------*/
 
 #menu {
-    height: 100vh;
-    width:  100%;
-    z-index:   2;
-    position: fixed;
     top: 0;
+    height: 100vh;
+    width:   100%;
+    z-index:    2;
+    position: fixed;
     background-color: $blue;
     text-align:      center;
-    padding:   10px 0 60px;
+    padding:    10px 0 60px;
 
     img {
         width: 46px;
@@ -81,8 +81,8 @@ nav ul {
 
 #hamburger {
     height: 36px;
-    width: 36px;
-    z-index: 10;
+    width:  36px;
+    z-index:  10;
     position: fixed;
 }
 
@@ -135,7 +135,7 @@ nav ul {
 
 .text-content {
     max-width: 590px;
-    padding: 30px;
+    padding:    30px;
     text-align: center;
     margin-top: -140px;
     transition: opacity 0.1s ease-in-out;
@@ -146,52 +146,53 @@ nav ul {
 }
 
 #portfolio {
-    max-width: 872px;
-    position: absolute;
-    background-color: white;
-    padding: 30px 30px 60px 30px;
     top: 450px;
-    left: 50%;
+    left:  50%;
+    max-width:    872px;
+    position:  absolute;
     margin-left: -436px;
+    border-radius:  4px;
+    text-align:  center;
     border: 1px solid $border;
-    border-radius: 4px;
-    text-align: center;box-shadow: 0px 10px 14px -6px darken($border, 10);
+    background-color: white;
+    padding:   30px 30px 60px;
+    box-shadow: 0px 10px 14px -6px darken($border, 10);
 }
 
 #about, #skills, #contact {
     width: 100%;
-    background-color: white;
-    margin-top: 520px;
-    border-top: 2px solid $border;
-    border-bottom: 2px solid $border;
+    margin-top:  520px;
     text-align: center;
-    padding: 70px 30px 100px;
     position: relative;
+    background-color: white;
+    padding:  70px 30px 100px;
+    border-top:    2px solid $border;
+    border-bottom: 2px solid $border;
 }
 
 #about::before{
         height: 45px;
-        width: 45px;
-        content: '';
-        position: absolute;
+        width:  45px;
+        content:  '';
+        left:    50%;
         margin: -92px;
-        left: 50%;
         margin-left: -22px;
+        position: absolute;
         background-image: url('../images/green-arrow.png');
 }
 
 #skills, #contact{
     background-color: $bg;
-    margin-top: 0;
+    margin-top:    0;
     border-top: none;
 }
 
 #carousel {
-    margin: 60px auto 0;
-    width: 710px;
+    width:  710px;
     display: flex;
+    margin:     60px auto 0;
     justify-content: center;
-    align-items: center;
+    align-items:     center;
     -moz-user-select: -moz-none;
       -webkit-user-select: none;
           -ms-user-select: none;
@@ -200,32 +201,28 @@ nav ul {
 
 
 #skills-slider {
-    width: 710px;
-    height: 110px;
+    width:     710px;
+    height:    110px;
     overflow: hidden;
-    margin: 0 auto;
-    padding: 20px 0;
+    margin:   0 auto;
+    padding:  20px 0;
 }
 
 .slides {
     display: block;
-    width: 1800px;
+    width:  1800px;
     transition: all 0.4s ease-in-out;
 }
 
 .slide {
-    float: left;
-    list-style-type: none;
-    width: 96px;
-    height: 100px;
+    float:    left;
+    width:    96px;
+    height:  100px;
     margin: 0 21px;
+    list-style-type: none;
 }
 
-
-li > i {
-    font-size: 4rem;
-}
-
+li > i {font-size: 4rem}
 
 #contact {
     height: 450px;
@@ -233,25 +230,21 @@ li > i {
 }
 
 .contact-container {
-    display: flex;
+    display:    flex;
     margin-top: 60px;
     justify-content: space-between;
 }
 
-.email, .location {
-    text-align: left;
-}
+.email, .location {text-align: left}
 
 
 footer {
-    background-color: $footer;
-    height: 46px;
+    height:  46px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:   center;
+    align-items:       center;
+    background-color: $footer;
 }
-
-
 
 
 @import "media-queries";

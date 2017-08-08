@@ -215,8 +215,8 @@ body {
 =============================================*/
 header {
   width: 100%;
-  position: absolute;
-  z-index: 20; }
+  z-index: 20;
+  position: absolute; }
 
 .container-nav {
   height: 72px;
@@ -242,18 +242,18 @@ nav ul {
       color: white; }
 
 .contact {
+  color: white;
   padding: 8px 22px;
   border-radius: 20px;
-  color: white;
   border: 1px solid white; }
 
 /*----------  Mobile Nav  ----------*/
 #menu {
+  top: 0;
   height: 100vh;
   width: 100%;
   z-index: 2;
   position: fixed;
-  top: 0;
   background-color: rgba(48, 53, 82, 0.5);
   text-align: center;
   padding: 10px 0 60px; }
@@ -332,36 +332,36 @@ nav ul {
     height: auto; }
 
 #portfolio {
-  max-width: 872px;
-  position: absolute;
-  background-color: white;
-  padding: 30px 30px 60px 30px;
   top: 450px;
   left: 50%;
+  max-width: 872px;
+  position: absolute;
   margin-left: -436px;
-  border: 1px solid #e0e0e0;
   border-radius: 4px;
   text-align: center;
+  border: 1px solid #e0e0e0;
+  background-color: white;
+  padding: 30px 30px 60px;
   box-shadow: 0px 10px 14px -6px #c7c6c6; }
 
 #about, #skills, #contact {
   width: 100%;
-  background-color: white;
   margin-top: 520px;
-  border-top: 2px solid #e0e0e0;
-  border-bottom: 2px solid #e0e0e0;
   text-align: center;
+  position: relative;
+  background-color: white;
   padding: 70px 30px 100px;
-  position: relative; }
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0; }
 
 #about::before {
   height: 45px;
   width: 45px;
   content: '';
-  position: absolute;
-  margin: -92px;
   left: 50%;
+  margin: -92px;
   margin-left: -22px;
+  position: absolute;
   background-image: url("../images/green-arrow.png"); }
 
 #skills, #contact {
@@ -370,11 +370,11 @@ nav ul {
   border-top: none; }
 
 #carousel {
-  margin: 60px auto 0;
   width: 710px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 60px auto 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -400,10 +400,10 @@ nav ul {
 
 .slide {
   float: left;
-  list-style-type: none;
   width: 96px;
   height: 100px;
-  margin: 0 21px; }
+  margin: 0 21px;
+  list-style-type: none; }
 
 li > i {
   font-size: 4rem; }
@@ -425,7 +425,6 @@ li > i {
   text-align: left; }
 
 footer {
-  background-color: #525e6b;
   height: 46px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,7 +434,8 @@ footer {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background-color: #525e6b; }
 
 /*----------  Break Point 1 - 880px  ----------*/
 @media only screen and (max-width: 880px) {
