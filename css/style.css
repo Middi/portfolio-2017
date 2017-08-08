@@ -330,4 +330,52 @@ footer {
       -ms-flex-align: center;
           align-items: center; }
 
-/*----------  Break Point 1 - 1200px  ----------*/
+/*----------  Break Point 1 - 880px  ----------*/
+@media only screen and (max-width: 880px) {
+  #hero {
+    height: 400px; }
+  .text-content {
+    max-width: 100%;
+    margin-top: -80px; }
+  #portfolio {
+    width: 100%;
+    position: static;
+    margin: 0 auto;
+    box-shadow: none; }
+  .card-container {
+    display: block; }
+  .target:hover .card {
+    -webkit-transform: none;
+            transform: none; }
+  .card {
+    height: auto;
+    width: 100%;
+    position: static;
+    margin: 8px; }
+  .front, .back {
+    width: 100%;
+    height: auto;
+    position: static; }
+    .front img, .back img {
+      width: 100%; }
+    .front p, .back p {
+      padding: 10px 10px 50px 20px; }
+  #about {
+    margin-top: 60px; }
+  .left, .right {
+    display: none; }
+  #carousel {
+    max-width: 100%; }
+  #skills-slider {
+    max-width: 100%;
+    height: auto; }
+  .slides {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%; } }
