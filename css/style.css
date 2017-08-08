@@ -199,7 +199,7 @@ li[tooltip]:before {
   position: absolute;
   width: 81px;
   bottom: 12px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(38, 38, 38, 0.8);
   height: 20px;
   line-height: 26px;
   padding: 0 10px;
@@ -218,14 +218,12 @@ body {
 =============================================*/
 header {
   width: 100%;
-  height: 72px;
-  background-color: none;
   position: absolute;
   z-index: 20; }
 
 .container-nav {
   height: 72px;
-  padding: 0 30px;
+  padding: 0 40px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,40 +232,23 @@ header {
       -ms-flex-align: center;
           align-items: center;
   max-width: 1000px;
-  overflow: hidden;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .container-nav .logo {
-    -webkit-box-flex: 2;
-        -ms-flex-positive: 2;
-            flex-grow: 2; }
-    .container-nav .logo img {
-      width: 150px;
-      padding-top: 6px; }
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
-nav {
-  display: inline-block;
-  margin: 0 14px;
-  -ms-flex-negative: 2;
-      flex-shrink: 2; }
-  nav ul {
-    list-style-type: none; }
-  nav li {
+nav ul {
+  list-style-type: none; }
+  nav ul li {
     display: inline-block;
     padding: 0 16px; }
-    nav li a {
+    nav ul li a {
       color: white; }
 
 .contact {
-  display: inline-block;
   padding: 8px 22px;
   border-radius: 20px;
   color: white;
   border: 1px solid white; }
-
-button, button:hover {
-  cursor: pointer; }
 
 /*----------  Mobile Nav  ----------*/
 #menu {
@@ -282,15 +263,11 @@ button, button:hover {
   #menu img {
     width: 46px;
     margin-bottom: 70px; }
-  #menu ul {
-    list-style-type: none; }
   #menu li {
     padding: 10px 0; }
     #menu li a {
       color: white;
       font-size: 2rem; }
-    #menu li:hover {
-      background-color: rgba(40, 45, 69, 0.5); }
 
 #hamburger {
   height: 36px;
@@ -465,7 +442,7 @@ footer {
 
 /*----------  Break Point 1 - 880px  ----------*/
 @media only screen and (max-width: 880px) {
-  nav, .user {
+  nav {
     display: none; }
   #nav-toggle {
     display: block; }

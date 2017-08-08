@@ -4,7 +4,7 @@ li[tooltip]:before {
   position: absolute;
   width: 81px;
   bottom: 12px;
-  color: $black;
+  color: lighten($black, 15);
   height: 20px;
   line-height: 26px;
   padding: 0 10px;
