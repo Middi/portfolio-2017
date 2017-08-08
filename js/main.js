@@ -6,16 +6,25 @@ $(document).ready(function () {
   // ===========================
 
   $('#hamburger').click(function () {
-    if ($('#menu').hasClass('hidden')) {
-         $('#menu').slideDown( "slow", function() {
-            $('#menu').removeClass('hidden');
-         });
-    }
-    else {
-        $('#menu').slideUp( "slow", function() {
-            $('#menu').addClass('hidden');
-        });
-    }
+      
+
+        if ($('#menu').hasClass('hidden')) {
+            $('.text-content').css({
+                'opacity' : '0'
+            });
+            $('#menu').slideDown( "slow", function() {
+                $('#menu').removeClass('hidden');
+            });
+        }
+        else {
+            $('#menu').slideUp( "slow", function() {
+                $('.text-content').css({
+                    'opacity' : '1'
+                });
+                $('.text-content').show();
+                $('#menu').addClass('hidden');
+            });
+        }
   });
 
 
@@ -40,7 +49,39 @@ $(document).ready(function () {
                 return false;
             }
         }
-    });  
+    });
+
+
+
+    // ===========================
+    // Parralax Scrolling
+    // ===========================
+
+    $(window).scroll(function(){
+        var wScroll = $(this).scrollTop();
+
+        var opacity = wScroll /80;
+
+        $('.text-content').css({
+            'transform' : 'translate(0px, -' + wScroll /2.4 +'%)'
+        });
+
+        $('#hero').css({
+            'transform' : 'translate(0px, ' + wScroll /18 +'%)'
+        });
+        
+        if(opacity < 0.9) {
+            $('.container-nav').css({
+                'background-color' : 'rgba(48, 53, 82, ' + opacity +')'
+            });
+        }
+        else {
+             $('.container-nav').css({
+                'background-color' : 'rgba(48, 53, 82, 1.0)'
+            });
+        }
+
+    });
 
 
     // ===========================

@@ -274,11 +274,14 @@ button, button:hover {
   height: 100vh;
   width: 100%;
   z-index: 2;
+  position: fixed;
   top: 0;
-  background-color: rgba(48, 53, 82, 0.95);
-  position: absolute;
+  background-color: rgba(48, 53, 82, 0.5);
   text-align: center;
-  padding: 100px 0 60px; }
+  padding: 10px 0 60px; }
+  #menu img {
+    width: 46px;
+    margin-bottom: 70px; }
   #menu ul {
     list-style-type: none; }
   #menu li {
@@ -287,12 +290,13 @@ button, button:hover {
       color: white;
       font-size: 2rem; }
     #menu li:hover {
-      background-color: rgba(40, 45, 69, 0.95); }
+      background-color: rgba(40, 45, 69, 0.5); }
 
 #hamburger {
   height: 36px;
   width: 36px;
-  z-index: 10; }
+  z-index: 10;
+  position: fixed; }
 
 .hidden, #nav-toggle {
   display: none; }
@@ -347,7 +351,8 @@ button, button:hover {
   max-width: 590px;
   padding: 30px;
   text-align: center;
-  margin-top: -140px; }
+  margin-top: -140px;
+  transition: opacity 0.1s ease-in-out; }
   .text-content img {
     width: 100px;
     height: auto; }
