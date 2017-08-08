@@ -7,7 +7,6 @@ $(document).ready(function () {
 
   $('#hamburger').click(function () {
       
-
         if ($('#menu').hasClass('hidden')) {
             $('.text-content').css({
                 'opacity' : '0'
@@ -27,7 +26,7 @@ $(document).ready(function () {
         }
   });
 
-  
+
 
   // ===========================
   // Smooth Scrolling

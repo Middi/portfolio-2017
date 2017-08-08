@@ -337,7 +337,8 @@ nav ul {
   transition: opacity 0.1s ease-in-out; }
   .text-content img {
     width: 100px;
-    height: auto; }
+    height: auto;
+    margin-bottom: 10px; }
 
 #portfolio {
   top: 450px;
