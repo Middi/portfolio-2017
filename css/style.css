@@ -35,7 +35,8 @@ table {
   -moz-osx-font-smoothing: grayscale; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 input, select {
   -webkit-appearance: none;
@@ -260,7 +261,6 @@ nav {
 
 .contact {
   display: inline-block;
-  font-weight: 700;
   padding: 8px 22px;
   border-radius: 20px;
   color: white;

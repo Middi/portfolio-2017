@@ -63,7 +63,6 @@ nav {
 
 .contact {
     display: inline-block;
-    font-weight:      700;
     padding:    8px 22px;
     border-radius: 20px;
     color: white;
@@ -93,9 +92,7 @@ button, button:hover {cursor: pointer}
             color: white;
             font-size: 2rem;
         }
-        &:hover {
-            background-color: darken($blue, 4);
-        }
+        &:hover {background-color: darken($blue, 4)}
     }
 }
 

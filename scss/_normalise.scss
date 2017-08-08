@@ -43,7 +43,10 @@ table {
     -moz-osx-font-smoothing:  grayscale;
 }
 
-a {text-decoration: none}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 //--------------------------------
