@@ -27,6 +27,7 @@ $(document).ready(function () {
         }
   });
 
+  
 
   // ===========================
   // Smooth Scrolling
@@ -88,12 +89,12 @@ $(document).ready(function () {
     // Spin Cards On Load
     // ===========================
 
-
     setTimeout(function() {
         if($(window).width() > 880){
             $('.card').addClass('spin');
         }
     }, 2000);
+
 
 
     // ===========================
