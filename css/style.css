@@ -261,7 +261,7 @@ body {
   border-top: 2px solid #e0e0e0;
   border-bottom: 2px solid #e0e0e0;
   text-align: center;
-  padding: 70px 50px 100px;
+  padding: 70px 30px 100px;
   position: relative; }
 
 #about::before {
@@ -368,7 +368,8 @@ footer {
     height: auto;
     width: 100%;
     position: static;
-    margin: 8px; }
+    margin: 0;
+    margin-bottom: 50px; }
   .front, .back {
     width: 100%;
     height: auto;
@@ -377,6 +378,8 @@ footer {
       width: 100%; }
     .front p, .back p {
       padding: 10px 10px 50px 20px; }
+  .back {
+    display: none; }
   #about {
     margin-top: 60px; }
   .left, .right {
@@ -396,3 +399,18 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     max-width: 100%; } }
+
+/*----------  Break Point 1 - 880px  ----------*/
+@media only screen and (max-width: 500px) {
+  #hero {
+    height: 100vh; }
+  .text-content {
+    margin-top: -250px; }
+    .text-content h1 {
+      font-size: 1.8rem; }
+  .contact-container {
+    display: block; }
+  .email, .location {
+    text-align: center; }
+  footer p {
+    font-size: 0.7rem; } }

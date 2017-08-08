@@ -25,7 +25,8 @@
         height: auto;
         width: 100%;
         position: static;
-        margin: 8px;
+        margin: 0;
+        margin-bottom: 50px;
         
     }
 
@@ -40,9 +41,13 @@
         p {padding: 10px 10px 50px 20px}
     }
 
+    .back {
+        display: none;
+    }
 
-    #about{margin-top: 60px}
-
+    #about{
+        margin-top: 60px;
+    }
 
 
     .left, .right {
@@ -53,6 +58,7 @@
     #carousel {
         max-width: 100%;
     }
+
 
     #skills-slider {
         max-width: 100%;
@@ -68,3 +74,33 @@
 
 }
 
+
+
+/*----------  Break Point 1 - 880px  ----------*/
+
+@media only screen and (max-width: 500px) {
+    #hero {
+        height: 100vh;
+    }
+    .text-content {
+        margin-top: -250px;
+        h1 {
+            font-size: 1.8rem;
+        }
+    }
+
+    .contact-container {
+        display: block;
+    }
+    .email, .location {
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 0.7rem;
+}
+
+
+
+
+}
