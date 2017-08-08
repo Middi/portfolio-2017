@@ -95,10 +95,13 @@ p {
 small {
   font-size: 12px; }
 
+a {
+  cursor: pointer; }
+
 .light {
   color: white;
   margin-bottom: 0; }
-  .light span {
+  .light span, .light a {
     color: #00d562; }
 
 button {

@@ -57,12 +57,15 @@ small {
     font-size: 12px;
 }
 
+a {
+    cursor: pointer;
+}
 
 .light {
     color: white;
     margin-bottom: 0;
 
-    span {
+    span, a {
         color: $green;
     }
 }
