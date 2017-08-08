@@ -85,10 +85,12 @@ $(document).ready(function () {
 
 
     setTimeout(function() {
-        $('.card').addClass('spin');
+        if($(window).width() > 880){
+            $('.card').addClass('spin');
+        }
     }, 2000);
 
-    
+
     // ===========================
     // Slider
     // ===========================
