@@ -96,7 +96,7 @@ p {
 small {
   font-size: 12px; }
 
-a, .fa {
+a, .fa, button {
   cursor: pointer; }
 
 .light {
@@ -107,6 +107,7 @@ a, .fa {
 
 button {
   background: #61d45f;
+  font-size: 0.9rem;
   line-height: 1em;
   color: white;
   font-size: 1rem;
@@ -114,14 +115,9 @@ button {
   margin: 0 .25em 0 0;
   border: none;
   border-radius: 30px;
-  padding-bottom: 14px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 14px;
+  padding: 14px 50px;
   transition: all 0.2s ease;
-  font-size: 14px;
-  box-shadow: rgba(125, 189, 122, 0.4) 0px 5px 10px 0px;
-  cursor: pointer; }
+  box-shadow: rgba(125, 189, 122, 0.4) 0px 5px 10px 0px; }
   button:active {
     -webkit-transform: scale(0.98);
             transform: scale(0.98); }

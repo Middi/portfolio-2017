@@ -1,20 +1,16 @@
 button {
-	background: $green;
-	line-height: 1em;
-	color: 	  white;
-	font-size:  1rem;
-	font-weight: 500;
-    margin:       0 .25em 0 0;
-    border: none;
-	border-radius: 30px;
-    padding-bottom: 14px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 14px;
+	background:  $green;
+    font-size:   0.9rem;
+	line-height:    1em;
+	color: 	    white;
+	font-size:     1rem;
+	font-weight:    500;
+    margin: 0 .25em 0 0;
+    border:        none;
+    border-radius: 30px;
+    padding:  14px 50px;
     transition: all 0.2s ease;
-    font-size: 14px;
     box-shadow: desaturate(rgba(98, 219, 92, 0.4), 30) 0px 5px 10px 0px;
-    cursor: pointer;
 	
 	&:active {transform: scale(0.98)}
 	
