@@ -459,10 +459,10 @@ footer {
     -webkit-transform: none;
             transform: none; }
   .card {
+    margin: 0;
     height: auto;
     width: 100%;
     position: static;
-    margin: 0;
     margin-bottom: 50px; }
   .front, .back {
     width: 100%;
@@ -489,12 +489,12 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    max-width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    max-width: 100%; } }
+            justify-content: center; } }
 
-/*----------  Break Point 1 - 880px  ----------*/
+/*----------  Break Point 2 - 500px  ----------*/
 @media only screen and (max-width: 500px) {
   #hero {
     height: 100vh; }
