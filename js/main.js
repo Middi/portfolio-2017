@@ -80,10 +80,15 @@ $(document).ready(function () {
                 'background-color' : 'rgba(48, 53, 82, 1.0)'
             });
         }
-
+    
     });
 
 
+    setTimeout(function() {
+        $('.card').addClass('spin');
+    }, 2000);
+
+    
     // ===========================
     // Slider
     // ===========================

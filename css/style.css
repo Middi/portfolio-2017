@@ -123,7 +123,7 @@ button {
   padding-top: 14px;
   transition: all 0.2s ease;
   font-size: 14px;
-  box-shadow: rgba(98, 219, 92, 0.4) 0px 5px 10px 0px;
+  box-shadow: rgba(125, 189, 122, 0.4) 0px 5px 10px 0px;
   cursor: pointer; }
   button:active {
     -webkit-transform: scale(0.98);
@@ -155,12 +155,16 @@ button {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg); }
 
+.spin {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg); }
+
 .card {
   height: 300px;
   width: 240px;
   position: relative;
   cursor: pointer;
-  transition: all 0.6s ease;
+  transition: all 1.6s ease;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   margin: 15px 15px 60px 15px; }

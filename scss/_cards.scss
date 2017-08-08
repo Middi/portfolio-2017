@@ -13,13 +13,14 @@
     .card {transform: rotateY(180deg)}
 }
 
+.spin {transform: rotateY(360deg)}
 
 .card {
     height: 300px;
     width: 240px;
     position: relative;
     cursor:    pointer;
-    transition:    all 0.6s ease;
+    transition:    all 1.6s ease;
     transform-style: preserve-3d;
     margin: 15px 15px 60px 15px;
     
