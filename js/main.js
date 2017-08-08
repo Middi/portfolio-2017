@@ -7,19 +7,27 @@ $(document).ready(function () {
     var sliderpos = 0;
     
     $('.left').click(function () {
-        sliderpos += 140;
-        $('.slides').css({
-            'margin-left' : '' + sliderpos + 'px'
-        });
-        pos();
+        if(sliderpos < 0) {
+            sliderpos += 140;
+            $('.slides').css({
+                'margin-left' : '' + sliderpos + 'px'
+            });
+            pos();
+        }
+
+        else {
+            return false;
+        }
     });
 
     $('.right').click(function () {
-        sliderpos -= 140;
-        $('.slides').css({
-            'margin-left' : '' + sliderpos + 'px'
-        });
-        pos();
+        if(sliderpos > -980) {
+            sliderpos -= 140;
+            $('.slides').css({
+                'margin-left' : '' + sliderpos + 'px'
+            });
+            pos();
+        }
     });
 
 
