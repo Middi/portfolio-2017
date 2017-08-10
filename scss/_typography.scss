@@ -55,4 +55,7 @@ a, .fa, button {cursor: pointer}
     margin-bottom: 0;
 
     span, a {color: $green}
+    a:hover{
+        color: white;
+    }
 }
