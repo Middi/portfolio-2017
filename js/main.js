@@ -1,58 +1,5 @@
 $(document).ready(function () {
 
-
-  // ===========================
-  // Mobile Nav
-  // ===========================
-
-//   $('#hamburger').click(function () {
-      
-//         if ($('#menu').hasClass('hidden')) {
-//             $('.text-content').css({
-//                 'opacity' : '0'
-//             });
-//             $('#menu').slideDown( "slow", function() {
-//                 $('#menu').removeClass('hidden');
-//             });
-//         }
-//         else {
-//             $('#menu').slideUp( "slow", function() {
-//                 $('.text-content').css({
-//                     'opacity' : '1'
-//                 });
-//                 $('.text-content').show();
-//                 $('#menu').addClass('hidden');
-//             });
-//         }
-//   });
-
-
-
-  // ===========================
-  // Smooth Scrolling
-  // ===========================
-
-    // $('a[href*="#"]:not([href="#"])').click(function() {
-    //     if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-    //         var target = $(this.hash);
-    //         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-
-    //         if (target.length) {
-    //             $('html, body').animate({
-    //                 scrollTop: target.offset().top
-    //             }, 1000);
-
-    //             $('#menu').slideUp( "slow", function() {
-    //             $('#menu').addClass('hidden');
-                
-    //             });
-    //             return false;
-    //         }
-    //     }
-    // });
-
-
-
     // ===========================
     // Parralax Scrolling
     // ===========================
@@ -60,27 +7,17 @@ $(document).ready(function () {
     $(window).scroll(function(){
         var wScroll = $(this).scrollTop();
 
-        var opacity = wScroll /80;
+        // Move hero image text faster on desktop only
+        if($(window).width() > 880){
+            $('.text-content').css({
+                'transform' : 'translate(0px, -' + wScroll /2.4 +'%)'
+            });
+        }
 
-        $('.text-content').css({
-            'transform' : 'translate(0px, -' + wScroll /2.4 +'%)'
-        });
-
+        //Hero image parralax
         $('#hero').css({
             'transform' : 'translate(0px, ' + wScroll /18 +'%)'
         });
-        
-        if(opacity < 0.9) {
-            $('.container-nav').css({
-                'background-color' : 'rgba(48, 53, 82, ' + opacity +')'
-            });
-        }
-        else {
-             $('.container-nav').css({
-                'background-color' : 'rgba(48, 53, 82, 1.0)'
-            });
-        }
-    
     });
 
 
