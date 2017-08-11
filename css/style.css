@@ -91,7 +91,7 @@ h4 {
   margin-bottom: 12px; }
 
 h5 {
-  font-size: 0.9rem; }
+  font-size: 1rem; }
 
 p {
   font-size: 1rem;
@@ -114,7 +114,6 @@ a, .fa, button {
 
 button {
   background: #61d45f;
-  font-size: 0.9rem;
   line-height: 1em;
   color: white;
   font-size: 1rem;
@@ -123,6 +122,7 @@ button {
   border: none;
   border-radius: 30px;
   padding: 14px 50px;
+  cursor: pointer;
   transition: all 0.2s ease;
   box-shadow: rgba(125, 189, 122, 0.4) 0px 5px 10px 0px; }
   button:active {
@@ -132,6 +132,16 @@ button {
     background-color: #61d95f;
     box-shadow: rgba(125, 189, 122, 0.4) 0px 9px 10px 0px;
     color: white; }
+
+.btn-small {
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  padding: 10px 0;
+  width: 100px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -50px; }
 
 .card-container {
   margin-top: 30px;
@@ -186,11 +196,13 @@ button {
     width: 240px; }
   .front h5, .front a, .back h5, .back a {
     padding: 30px 20px 0 20px;
-    font-weight: 600; }
+    font-weight: 500; }
   .front p, .back p {
     margin: 0;
     font-size: 0.9rem;
     padding: 10px 10px 5px 20px; }
+  .front a, .back a {
+    text-align: center; }
 
 .back {
   -webkit-transform: rotateY(180deg);

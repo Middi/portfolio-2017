@@ -5,26 +5,26 @@ $(document).ready(function () {
   // Mobile Nav
   // ===========================
 
-  $('#hamburger').click(function () {
+//   $('#hamburger').click(function () {
       
-        if ($('#menu').hasClass('hidden')) {
-            $('.text-content').css({
-                'opacity' : '0'
-            });
-            $('#menu').slideDown( "slow", function() {
-                $('#menu').removeClass('hidden');
-            });
-        }
-        else {
-            $('#menu').slideUp( "slow", function() {
-                $('.text-content').css({
-                    'opacity' : '1'
-                });
-                $('.text-content').show();
-                $('#menu').addClass('hidden');
-            });
-        }
-  });
+//         if ($('#menu').hasClass('hidden')) {
+//             $('.text-content').css({
+//                 'opacity' : '0'
+//             });
+//             $('#menu').slideDown( "slow", function() {
+//                 $('#menu').removeClass('hidden');
+//             });
+//         }
+//         else {
+//             $('#menu').slideUp( "slow", function() {
+//                 $('.text-content').css({
+//                     'opacity' : '1'
+//                 });
+//                 $('.text-content').show();
+//                 $('#menu').addClass('hidden');
+//             });
+//         }
+//   });
 
 
 
@@ -32,24 +32,24 @@ $(document).ready(function () {
   // Smooth Scrolling
   // ===========================
 
-    $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    // $('a[href*="#"]:not([href="#"])').click(function() {
+    //     if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+    //         var target = $(this.hash);
+    //         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
-            if (target.length) {
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 1000);
+    //         if (target.length) {
+    //             $('html, body').animate({
+    //                 scrollTop: target.offset().top
+    //             }, 1000);
 
-                $('#menu').slideUp( "slow", function() {
-                $('#menu').addClass('hidden');
+    //             $('#menu').slideUp( "slow", function() {
+    //             $('#menu').addClass('hidden');
                 
-                });
-                return false;
-            }
-        }
-    });
+    //             });
+    //             return false;
+    //         }
+    //     }
+    // });
 
 
 

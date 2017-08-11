@@ -1,6 +1,5 @@
 button {
 	background:  $green;
-    font-size:   0.9rem;
 	line-height:    1em;
 	color: 	    white;
 	font-size:     1rem;
@@ -8,7 +7,8 @@ button {
     margin: 0 .25em 0 0;
     border:        none;
     border-radius: 30px;
-    padding:  14px 50px;
+	padding:  14px 50px;
+	cursor: 	pointer;
     transition: all 0.2s ease;
     box-shadow: desaturate(rgba(98, 219, 92, 0.4), 30) 0px 5px 10px 0px;
 	
@@ -21,3 +21,14 @@ button {
 	}
 }
 
+.btn-small {
+	font-size: 0.7rem;
+	line-height: 0.7rem;
+	padding:  10px 0;
+	width: 100px;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -50px;
+	
+}
