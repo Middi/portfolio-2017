@@ -81,7 +81,7 @@ h2:after {
   left: 50%;
   margin-left: -20px;
   position: absolute;
-  border-bottom: 6px solid #61d45f; }
+  border-bottom: 6px solid #5cca5a; }
 
 h3 {
   font-size: 1.4rem; }
@@ -108,12 +108,12 @@ a, .fa, button {
   color: white;
   margin-bottom: 0; }
   .light span, .light a {
-    color: #61d45f; }
+    color: #5cca5a; }
   .light a:hover {
     color: white; }
 
 button {
-  background: #61d45f;
+  background: #5cca5a;
   line-height: 1em;
   color: white;
   font-size: 1rem;
@@ -129,19 +129,19 @@ button {
     -webkit-transform: scale(0.98);
             transform: scale(0.98); }
   button:hover {
-    background-color: #61d95f;
+    background-color: #5ccf5a;
     box-shadow: rgba(125, 189, 122, 0.4) 0px 9px 10px 0px;
     color: white; }
 
 .btn-small {
-  font-size: 0.7rem;
-  line-height: 0.7rem;
-  padding: 10px 0;
-  width: 100px;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  padding: 12px 0;
+  width: 110px;
   position: absolute;
   bottom: 30px;
   left: 50%;
-  margin-left: -50px; }
+  margin-left: -55px; }
 
 .card-container {
   margin-top: 30px;
