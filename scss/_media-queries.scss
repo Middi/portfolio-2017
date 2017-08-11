@@ -2,13 +2,9 @@
 /*----------  Break Point 1 - 880px  ----------*/
 
 @media only screen and (max-width: 880px) {
-
-    nav {display: none}
-
-    #nav-toggle {display: block}
     
     #hero {
-        height: 100vh;
+        height: 600px;
         background-position: top center;
         background-size:          cover;
         background-repeat:    no-repeat;
@@ -22,7 +18,6 @@
 
     .text-content {
         max-width:   100%;
-        margin-top: -240px;
     }
 
     #portfolio {
