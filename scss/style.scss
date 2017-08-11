@@ -143,10 +143,21 @@ nav ul {
     justify-content: center;
     align-items:     center;
     position:      relative;
+}
+
+#hero:after {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: "";
     background-position: top center;
     background-size:          cover;
     background-repeat:    no-repeat;
     background-image: url('../images/hero-img.jpg');
+    top: 0;left:0;right:0;bottom:0;
+    transform-origin: top left;
+    transform: skewY(-4deg);
+    z-index: -1;
 }
 
 .container {

@@ -328,11 +328,26 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  position: relative; }
+
+#hero:after {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  content: "";
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../images/hero-img.jpg"); }
+  background-image: url("../images/hero-img.jpg");
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: skewY(-4deg);
+          transform: skewY(-4deg);
+  z-index: -1; }
 
 .container {
   max-width: 600px;
