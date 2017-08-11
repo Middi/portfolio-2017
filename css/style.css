@@ -260,7 +260,9 @@ nav ul {
   border: 1px solid white; }
   .contact:hover {
     padding-bottom: 8px;
-    border-bottom: 1px solid white; }
+    border-bottom: 1px solid white;
+    background-color: white;
+    color: #141478; }
 
 /*----------  Mobile Nav  ----------*/
 #menu {
