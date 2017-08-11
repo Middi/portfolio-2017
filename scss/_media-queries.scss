@@ -6,12 +6,23 @@
     nav {display: none}
 
     #nav-toggle {display: block}
+    
+    #hero {
+        height: 100vh;
+        background-position: top center;
+        background-size:          cover;
+        background-repeat:    no-repeat;
+        background-image: url('../images/hero-img.jpg');
+        z-index: -1;
+    }
 
-    #hero {height: 400px}
+    #hero:after {
+        display: none;
+    }
 
     .text-content {
         max-width:   100%;
-        margin-top: -80px;
+        margin-top: -240px;
     }
 
     #portfolio {
@@ -24,6 +35,8 @@
     .card-container {display: block}
 
     .target:hover { .card {transform: none} }
+
+    .spin {transform: none}
 
     .card {
         margin:    0;

@@ -489,10 +489,17 @@ footer {
   #nav-toggle {
     display: block; }
   #hero {
-    height: 400px; }
+    height: 100vh;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../images/hero-img.jpg");
+    z-index: -1; }
+  #hero:after {
+    display: none; }
   .text-content {
     max-width: 100%;
-    margin-top: -80px; }
+    margin-top: -240px; }
   #portfolio {
     width: 100%;
     position: static;
@@ -501,6 +508,9 @@ footer {
   .card-container {
     display: block; }
   .target:hover .card {
+    -webkit-transform: none;
+            transform: none; }
+  .spin {
     -webkit-transform: none;
             transform: none; }
   .card {
