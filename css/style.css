@@ -109,8 +109,8 @@ a, .fa, button {
   margin-bottom: 0; }
   .light span, .light a {
     color: white; }
-  .light a:hover {
-    color: #ebebeb; }
+    .light span a:hover, .light a a:hover {
+      color: #ebebeb; }
 
 .btn {
   background-color: #fe8964;
@@ -127,43 +127,40 @@ a, .fa, button {
     -webkit-transform: scale(0.98);
             transform: scale(0.98); }
   .btn:hover {
-    background-color: #fa6c3f;
-    color: white; }
+    background-color: #fa6c3f; }
 
 .card .btn-small {
-  background-color: #3b92f8;
+  bottom: 30px;
+  left: 50%;
   font-size: 0.8rem;
   width: 110px;
   padding: 14px 0px;
   position: absolute;
-  bottom: 30px;
-  left: 50%;
-  margin-left: -55px; }
+  margin-left: -55px;
+  background-color: #3b92f8; }
   .card .btn-small:active {
     -webkit-transform: scale(0.98);
             transform: scale(0.98); }
   .card .btn-small:hover {
-    background-color: #187cf2;
-    color: white; }
+    background-color: #187cf2; }
 
 .card .btn-front {
-  background-color: #3b92f8;
+  bottom: 30px;
+  left: 50%;
   font-size: 0.8rem;
   width: 110px;
   padding: 14px 0px;
-  bottom: 30px;
-  left: 50%;
-  margin-left: -55px; }
+  margin-left: -55px;
+  background-color: #3b92f8; }
   .card .btn-front:active {
     -webkit-transform: scale(0.98);
             transform: scale(0.98); }
   .card .btn-front:hover {
-    background-color: #187cf2;
-    color: white; }
+    background-color: #187cf2; }
 
 .btn-contact, .btn-cv {
-  position: relative;
   top: 60px;
+  position: relative;
   border: 2px solid #fe8964; }
   .btn-contact:active, .btn-cv:active {
     -webkit-transform: scale(0.98);
@@ -206,19 +203,15 @@ a, .fa, button {
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg); }
 
-.half-spin .card {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg); }
-
 .card {
   height: 300px;
   width: 240px;
+  margin: 15px;
   position: relative;
   cursor: pointer;
   transition: all 1.6s ease;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  margin: 15px; }
+          transform-style: preserve-3d; }
 
 .front, .back {
   top: 0;
@@ -246,10 +239,10 @@ a, .fa, button {
   .front a, .back a {
     text-align: center; }
   .front hr, .back hr {
-    margin: 6px 20px;
     height: 1px;
-    background-color: #3b92f8;
-    border: 0px solid #000; }
+    margin: 6px 20px;
+    border: none;
+    background-color: #3b92f8; }
 
 .back {
   -webkit-transform: rotateY(180deg);
@@ -281,106 +274,6 @@ li[tooltip]:hover:before {
 body {
   background-color: #fafafa; }
 
-/*=============================================
-=                Header / Nav                 =
-=============================================*/
-header {
-  width: 100%;
-  z-index: 20;
-  position: absolute; }
-
-.container-nav {
-  height: 72px;
-  padding: 0 40px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 1000px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
-
-nav ul {
-  list-style-type: none; }
-  nav ul li {
-    display: inline-block;
-    padding: 0 16px; }
-    nav ul li a {
-      color: white;
-      opacity: 0.9; }
-      nav ul li a:hover {
-        opacity: 1;
-        padding-bottom: 10px;
-        border-bottom: 3px solid white; }
-
-.contact {
-  color: white;
-  padding: 8px 22px;
-  border-radius: 20px;
-  border: 1px solid white; }
-  .contact:hover {
-    padding-bottom: 8px;
-    border-bottom: 1px solid white;
-    background-color: white;
-    color: #141478; }
-
-/*----------  Mobile Nav  ----------*/
-#menu {
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  z-index: 2;
-  position: fixed;
-  background-color: rgba(48, 53, 82, 0.5);
-  text-align: center;
-  padding: 10px 0 60px; }
-  #menu img {
-    width: 46px;
-    margin-bottom: 70px; }
-  #menu li {
-    padding: 10px 0; }
-    #menu li a {
-      color: white;
-      font-size: 2rem; }
-
-#hamburger {
-  height: 36px;
-  width: 36px;
-  z-index: 10;
-  top: 25px;
-  right: 20px;
-  position: absolute; }
-
-.hidden, #nav-toggle {
-  display: none; }
-
-#nav-toggle span {
-  margin-top: 10px; }
-
-#nav-toggle span,
-#nav-toggle span:before,
-#nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 3px;
-  width: 35px;
-  background: white;
-  position: absolute;
-  display: block;
-  content: '';
-  z-index: 10; }
-
-#nav-toggle span:before {
-  top: -10px; }
-
-#nav-toggle span:after {
-  bottom: -10px; }
-
-/*=====  End of Header / Nav  ======*/
 #hero {
   height: 600px;
   display: -webkit-box;
@@ -395,18 +288,18 @@ nav ul {
   position: relative; }
 
 #hero:after {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  content: "";
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(to bottom, rgba(59, 146, 248, 0.7), rgba(59, 146, 248, 0.7)), url("../images/hero-img.jpg");
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  position: absolute;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, rgba(59, 146, 248, 0.7), rgba(59, 146, 248, 0.7)), url("../images/hero-img.jpg");
   -webkit-transform-origin: top left;
           transform-origin: top left;
   -webkit-transform: skewY(-4deg);
@@ -457,16 +350,16 @@ nav ul {
 #about::before {
   height: 45px;
   width: 45px;
-  content: "\f078";
   left: 50%;
   margin: -92px;
+  content: "\f078";
+  font-size: 1rem;
   margin-left: -22px;
   line-height: 45px;
-  font-size: 16px;
   position: absolute;
   color: white;
-  background-color: #3b92f8;
   border-radius: 24px;
+  background-color: #3b92f8;
   font-family: Fontawesome; }
 
 #skills, #contact {

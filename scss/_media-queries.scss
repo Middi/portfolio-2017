@@ -12,13 +12,9 @@
         z-index: -1;
     }
 
-    #hero:after {
-        display: none;
-    }
+    #hero:after {display: none}
 
-    .text-content {
-        max-width:   100%;
-    }
+    .text-content {max-width:   100%}
 
     #portfolio {
         width:      100%;
@@ -54,17 +50,13 @@
 
     .back {display: none}
 
-    .hide-desk {
-        display: block;
-    }
+    .hide-desk {display: block}
 
     #about{margin-top: 60px}
 
     .left, .right {display: none}
 
-
     #carousel {max-width: 100%}
-
 
     #skills-slider {
         max-width: 100%;
@@ -94,8 +86,8 @@
     }
 
     .btn-contact, .btn-cv {
-        display: block;
-        max-width: 180px;
+        display:    block;
+        max-width:  180px;
         margin: 30px auto;
     }
 

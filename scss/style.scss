@@ -22,121 +22,6 @@
 
 body {background-color: $bg}
 
-
-/*=============================================
-=                Header / Nav                 =
-=============================================*/
-
-header {
-    width: 100%;
-    z-index: 20;
-    position: absolute;
-}
-
-.container-nav {
-    height:        72px;
-    padding:     0 40px;
-    margin:      0 auto;
-    display:       flex;
-    align-items: center;
-    max-width:   1000px;
-    justify-content: flex-end;
-}
-
-nav ul {
-    list-style-type: none;
-
-    li {
-        display: inline-block;
-        padding:       0 16px;
-        a {
-            color: white;
-            opacity:   0.9;
-            &:hover {
-                opacity: 1;
-                padding-bottom: 10px;
-                border-bottom: 3px solid white;
-            }
-        } 
-    }
-}
-
-.contact {
-    color:      white;
-    padding:   8px 22px;
-    border-radius: 20px;
-    border: 1px solid white;
-    &:hover {
-        padding-bottom: 8px;
-        border-bottom: 1px solid white;
-        background-color: white;
-        color: rgba(20,20,120,1);
-    }
-}
-
-
-/*----------  Mobile Nav  ----------*/
-
-#menu {
-    top: 0;
-    height: 100vh;
-    width:   100%;
-    z-index:    2;
-    position: fixed;
-    background-color: $blue;
-    text-align:      center;
-    padding:    10px 0 60px;
-
-    img {
-        width: 46px;
-        margin-bottom: 70px;
-    }
-
-    li {
-        padding: 10px 0;
-
-        a {
-            color: white;
-            font-size: 2rem;
-        }
-    }
-}
-
-#hamburger {
-    height: 36px;
-    width:  36px;
-    z-index:  10;
-    top:    25px;
-    right:  20px;
-    position: absolute;
-}
-
-.hidden, #nav-toggle {display: none}
-
-#nav-toggle span {margin-top: 10px}
-
-#nav-toggle span, 
-#nav-toggle span:before,
-#nav-toggle span:after {
-  cursor:     pointer;
-  border-radius:  1px;
-  height:         3px;
-  width:         35px;
-  background: white;
-  position:  absolute;
-  display:      block;
-  content:         '';
-  z-index: 10;
-
-}
-
-#nav-toggle span:before {top: -10px}
-
-#nav-toggle span:after {bottom: -10px}
-
-/*=====  End of Header / Nav  ======*/
-
-
 #hero {
     height: 600px;
     display: flex;
@@ -146,15 +31,18 @@ nav ul {
 }
 
 #hero:after {
+    top:    0;
+    left:   0;
+    right:  0;
+    bottom: 0;
     height: 100%;
-    width: 100%;
+    width:  100%;
+    content:  "";
     position: absolute;
-    content: "";
     background-position: top center;
     background-size:          cover;
     background-repeat:    no-repeat;
     background-image: linear-gradient(to bottom, rgba(59, 146, 248, 0.7), rgba(59, 146, 248, 0.7)), url('../images/hero-img.jpg');
-    top: 0;left:0;right:0;bottom:0;
     transform-origin: top left;
     transform: skewY(-4deg);
     z-index: -1;
@@ -203,23 +91,21 @@ nav ul {
     border-bottom: 2px solid $border;
 }
 
-#about {
-    padding:  70px 30px 160px;
-}
+#about {padding: 70px 30px 160px}
 
 #about::before{
-        height: 45px;
-        width:  45px;
-        content:"\f078";
-        left:    50%;
+        height:  45px;
+        width:   45px;
+        left:     50%;
         margin: -92px;
+        content: "\f078";
+        font-size:  1rem;
         margin-left: -22px;
-        line-height: 45px;
-        font-size: 16px;
+        line-height:  45px;
         position: absolute;
-        color:white;
-        background-color: $brand;
+        color:     white;
         border-radius: 24px;
+        background-color: $brand;
         font-family: Fontawesome;
 }
 
@@ -240,7 +126,6 @@ nav ul {
           -ms-user-select: none;
               user-select: none;
 }
-
 
 #skills-slider {
     width:     710px;
@@ -279,12 +164,11 @@ li > i {font-size: 4rem}
 
 .email, .location {text-align: left}
 
-
 footer {
     height:  46px;
     display: flex;
-    justify-content:   center;
-    align-items:       center;
+    justify-content:  center;
+    align-items:      center;
     background-color: $brand;
 }
 
