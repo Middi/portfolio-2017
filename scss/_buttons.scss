@@ -3,19 +3,17 @@
 	line-height:    1em;
 	color: 	    white;
 	font-size:     1rem;
-	font-weight:    500;
-    margin: 0 .25em 0 0;
+	font-weight:    700;
+    margin: 3em .25em 0;
     border:        none;
-	padding:  14px 50px;
+	padding:  14px 44px;
 	cursor: 	pointer;
     transition: all 0.2s ease;
-    // box-shadow: desaturate(#f97749,30) 0px 5px 10px 0px;
 	
 	&:active {transform: scale(0.98)}
 	
 	&:hover {
 		background-color: desaturate(darken($red, 8), 4);
-        // box-shadow: desaturate(#f97749, 30) 0px 2px 10px 0px;
 		color: white;
 	}
 }
@@ -34,7 +32,6 @@
 	
 	&:hover {
 		background-color: desaturate(darken($brand, 8), 4);
-        // box-shadow: desaturate(#f97749, 30) 0px 2px 10px 0px;
 		color: white;
 	}
 }
@@ -54,7 +51,30 @@
 	
 	&:hover {
 		background-color: desaturate(darken($brand, 8), 4);
-        // box-shadow: desaturate(#f97749, 30) 0px 2px 10px 0px;
 		color: white;
+	}
+}
+
+.btn-contact, .btn-cv {
+	position: relative;
+	top: 60px;
+	border: 2px solid $red;
+
+	&:active {transform: scale(0.98)}
+	
+	&:hover {
+		background-color: desaturate(darken($red, 8), 4);
+		border: 2px solid desaturate(darken($red, 8), 4);
+		color: white;
+	}
+}
+
+.btn-cv {
+	background-color: white;
+	color: desaturate(darken($red, 8), 4);
+	
+	&:hover {
+		background-color: $red;
+		border: 2px solid $red;
 	}
 }

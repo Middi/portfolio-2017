@@ -117,10 +117,10 @@ a, .fa, button {
   line-height: 1em;
   color: white;
   font-size: 1rem;
-  font-weight: 500;
-  margin: 0 .25em 0 0;
+  font-weight: 700;
+  margin: 3em .25em 0;
   border: none;
-  padding: 14px 50px;
+  padding: 14px 44px;
   cursor: pointer;
   transition: all 0.2s ease; }
   .btn:active {
@@ -161,6 +161,25 @@ a, .fa, button {
     background-color: #187cf2;
     color: white; }
 
+.btn-contact, .btn-cv {
+  position: relative;
+  top: 60px;
+  border: 2px solid #fe8964; }
+  .btn-contact:active, .btn-cv:active {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98); }
+  .btn-contact:hover, .btn-cv:hover {
+    background-color: #fa6c3f;
+    border: 2px solid #fa6c3f;
+    color: white; }
+
+.btn-cv {
+  background-color: white;
+  color: #fa6c3f; }
+  .btn-cv:hover {
+    background-color: #fe8964;
+    border: 2px solid #fe8964; }
+
 .card-container {
   margin-top: 30px;
   display: -webkit-box;
@@ -199,7 +218,7 @@ a, .fa, button {
   transition: all 1.6s ease;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  margin: 15px 15px 60px 15px; }
+  margin: 15px; }
 
 .front, .back {
   top: 0;
@@ -431,6 +450,9 @@ nav ul {
   padding: 70px 30px 100px;
   border-top: 2px solid #e0e0e0;
   border-bottom: 2px solid #e0e0e0; }
+
+#about {
+  padding: 70px 30px 160px; }
 
 #about::before {
   height: 45px;

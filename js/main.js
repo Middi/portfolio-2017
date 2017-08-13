@@ -4,20 +4,44 @@ $(document).ready(function () {
     // Parralax Scrolling
     // ===========================
 
-    $(window).scroll(function(){
+    $(window).scroll(function () {
         var wScroll = $(this).scrollTop();
 
         // Move hero image text faster on desktop only
-        if($(window).width() > 880){
+        if ($(window).width() > 880) {
             $('.text-content').css({
-                'transform' : 'translate(0px, -' + wScroll /2.4 +'%)'
+                'transform': 'translate(0px, -' + wScroll / 2.4 + '%)'
             });
         }
 
         //Hero image parralax
         $('#hero').css({
-            'transform' : 'translate(0px, ' + wScroll /18 +'%)'
+            'transform': 'translate(0px, ' + wScroll / 18 + '%)'
         });
+    });
+
+
+    // ===========================
+    // Smooth Scrolling
+    // ===========================
+
+    $('a[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+
+                $('#menu').slideUp("slow", function () {
+                    $('#menu').addClass('hidden');
+
+                });
+                return false;
+            }
+        }
     });
 
 
@@ -25,8 +49,8 @@ $(document).ready(function () {
     // Spin Cards On Load
     // ===========================
 
-    setTimeout(function() {
-        if($(window).width() > 880){
+    setTimeout(function () {
+        if ($(window).width() > 880) {
             $('.card').addClass('spin');
         }
     }, 2000);
