@@ -54,6 +54,11 @@
 
     .back {display: none}
 
+    .hide-desk {
+        display: block;
+        position: relative;
+    }
+
     #about{margin-top: 60px}
 
     .left, .right {display: none}

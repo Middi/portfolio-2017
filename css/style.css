@@ -166,6 +166,10 @@ button {
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg); }
 
+.half-spin .card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+
 .card {
   height: 300px;
   width: 240px;
@@ -209,6 +213,11 @@ button {
 .back {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg); }
+
+.hide-desk {
+  display: none;
+  margin-top: 10px;
+  position: relative; }
 
 li {
   position: relative; }
@@ -526,6 +535,9 @@ footer {
       padding: 10px 10px 50px 20px; }
   .back {
     display: none; }
+  .hide-desk {
+    display: block;
+    position: relative; }
   #about {
     margin-top: 60px; }
   .left, .right {

@@ -12,6 +12,8 @@
 
 .spin {transform: rotateY(360deg)}
 
+.half-spin { .card {transform: rotateY(180deg)}}
+
 .card {
     height: 300px;
     width:  240px;
@@ -61,3 +63,9 @@
 }
 
 .back {transform: rotateY(180deg)}
+
+.hide-desk {
+    display: none;
+    margin-top: 10px;
+    position: relative;
+}
