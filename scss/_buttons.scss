@@ -1,12 +1,11 @@
 button {
-	background:  #f97749;
+	background:  $green;
 	line-height:    1em;
 	color: 	    white;
 	font-size:     1rem;
 	font-weight:    500;
     margin: 0 .25em 0 0;
     border:        none;
-    border-radius: 30px;
 	padding:  14px 50px;
 	cursor: 	pointer;
     transition: all 0.2s ease;
@@ -15,7 +14,7 @@ button {
 	&:active {transform: scale(0.98)}
 	
 	&:hover {
-		background-color: desaturate(darken(#f97749, 7), 4);
+		background-color: desaturate(darken($green, 7), 4);
         // box-shadow: desaturate(#f97749, 30) 0px 2px 10px 0px;
 		color: white;
 	}

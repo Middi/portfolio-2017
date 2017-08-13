@@ -108,19 +108,18 @@ a, .fa, button {
   color: white;
   margin-bottom: 0; }
   .light span, .light a {
-    color: #f97749; }
-  .light a:hover {
     color: white; }
+  .light a:hover {
+    color: #ebebeb; }
 
 button {
-  background: #f97749;
+  background: #3b92f8;
   line-height: 1em;
   color: white;
   font-size: 1rem;
   font-weight: 500;
   margin: 0 .25em 0 0;
   border: none;
-  border-radius: 30px;
   padding: 14px 50px;
   cursor: pointer;
   transition: all 0.2s ease; }
@@ -128,7 +127,7 @@ button {
     -webkit-transform: scale(0.98);
             transform: scale(0.98); }
   button:hover {
-    background-color: #f35f2b;
+    background-color: #1d7ff2;
     color: white; }
 
 .btn-small {

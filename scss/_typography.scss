@@ -54,8 +54,8 @@ a, .fa, button {cursor: pointer}
     color:   white;
     margin-bottom: 0;
 
-    span, a {color: $green}
+    span, a {color: white}
     a:hover{
-        color: white;
+        color: darken(white,8);
     }
 }
