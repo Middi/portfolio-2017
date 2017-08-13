@@ -112,7 +112,7 @@ a, .fa, button {
   .light a:hover {
     color: #ebebeb; }
 
-button {
+.btn {
   background: #3b92f8;
   line-height: 1em;
   color: white;
@@ -123,19 +123,26 @@ button {
   padding: 14px 50px;
   cursor: pointer;
   transition: all 0.2s ease; }
-  button:active {
+  .btn:active {
     -webkit-transform: scale(0.98);
             transform: scale(0.98); }
-  button:hover {
+  .btn:hover {
     background-color: #187cf2;
     color: white; }
 
-.btn-small {
+.card .btn-small {
   font-size: 0.8rem;
-  line-height: 0.8rem;
-  padding: 12px 0;
   width: 110px;
+  padding: 14px 0px;
   position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -55px; }
+
+.card .btn-front {
+  font-size: 0.8rem;
+  width: 110px;
+  padding: 14px 0px;
   bottom: 30px;
   left: 50%;
   margin-left: -55px; }

@@ -1,4 +1,4 @@
-button {
+.btn {
 	background:  $brand;
 	line-height:    1em;
 	color: 	    white;
@@ -20,13 +20,23 @@ button {
 	}
 }
 
-.btn-small {
-	font-size: 0.8rem;
-	line-height: 0.8rem;
-	padding:  12px 0;
-	width: 110px;
+.card .btn-small {
+	font-size:  0.8rem;
+	width: 		 110px;
+	padding:  14px 0px;
 	position: absolute;
 	bottom: 30px;
-	left: 50%;
+	left: 	 50%;
+	margin-left: -55px;
+}
+
+
+
+.card .btn-front {
+	font-size:  0.8rem;
+	width: 		 110px;
+	padding:  14px 0px;
+	bottom: 30px;
+	left: 	 50%;
 	margin-left: -55px;
 }
