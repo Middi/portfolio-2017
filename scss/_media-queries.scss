@@ -93,6 +93,12 @@
         h1 {font-size: 1.8rem}
     }
 
+    .btn-contact, .btn-cv {
+        display: block;
+        max-width: 180px;
+        margin: 30px auto;
+    }
+
     .contact-container {display: block}
 
     .email, .location {text-align: center}
