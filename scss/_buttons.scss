@@ -1,5 +1,5 @@
 button {
-	background:  $green;
+	background:  #f97749;
 	line-height:    1em;
 	color: 	    white;
 	font-size:     1rem;
@@ -10,13 +10,13 @@ button {
 	padding:  14px 50px;
 	cursor: 	pointer;
     transition: all 0.2s ease;
-    box-shadow: desaturate(rgba(98, 219, 92, 0.4), 30) 0px 5px 10px 0px;
+    // box-shadow: desaturate(#f97749,30) 0px 5px 10px 0px;
 	
 	&:active {transform: scale(0.98)}
 	
 	&:hover {
-		background-color: saturate(lighten($green, 1), 4);
-        box-shadow: desaturate(rgba(98, 219, 92, 0.4), 30) 0px 9px 10px 0px;
+		background-color: desaturate(darken(#f97749, 7), 4);
+        // box-shadow: desaturate(#f97749, 30) 0px 2px 10px 0px;
 		color: white;
 	}
 }
