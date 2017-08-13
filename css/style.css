@@ -113,7 +113,7 @@ a, .fa, button {
     color: #ebebeb; }
 
 .btn {
-  background: #3b92f8;
+  background-color: #fe8964;
   line-height: 1em;
   color: white;
   font-size: 1rem;
@@ -127,10 +127,11 @@ a, .fa, button {
     -webkit-transform: scale(0.98);
             transform: scale(0.98); }
   .btn:hover {
-    background-color: #187cf2;
+    background-color: #fa6c3f;
     color: white; }
 
 .card .btn-small {
+  background-color: #3b92f8;
   font-size: 0.8rem;
   width: 110px;
   padding: 14px 0px;
@@ -138,14 +139,27 @@ a, .fa, button {
   bottom: 30px;
   left: 50%;
   margin-left: -55px; }
+  .card .btn-small:active {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98); }
+  .card .btn-small:hover {
+    background-color: #187cf2;
+    color: white; }
 
 .card .btn-front {
+  background-color: #3b92f8;
   font-size: 0.8rem;
   width: 110px;
   padding: 14px 0px;
   bottom: 30px;
   left: 50%;
   margin-left: -55px; }
+  .card .btn-front:active {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98); }
+  .card .btn-front:hover {
+    background-color: #187cf2;
+    color: white; }
 
 .card-container {
   margin-top: 30px;
