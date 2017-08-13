@@ -210,12 +210,17 @@ nav ul {
 #about::before{
         height: 45px;
         width:  45px;
-        content:  '';
+        content:"\f078";
         left:    50%;
         margin: -92px;
         margin-left: -22px;
+        line-height: 45px;
+        font-size: 16px;
         position: absolute;
-        background-image: url('../images/green-arrow.png');
+        color:white;
+        background-color: $brand;
+        border-radius: 24px;
+        font-family: Fontawesome;
 }
 
 #skills, #contact{
