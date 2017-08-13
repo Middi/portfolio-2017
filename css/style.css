@@ -7,7 +7,7 @@
 /*--- Dev Icons ---*/
 @import "https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css";
 /*--- Local Imports ---*/
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -61,7 +61,7 @@ button {
 =                  Typography                 =
 =============================================*/
 *, h1, h2, h3, h4, h5, h6, p, a, small {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8); }
 
@@ -71,7 +71,7 @@ h1 {
 
 h2 {
   font-size: 2.2rem;
-  font-weight: 800;
+  font-weight: 700;
   padding-bottom: 54px; }
 
 h2:after {
@@ -87,7 +87,7 @@ h3 {
   font-size: 1.4rem; }
 
 h4 {
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 12px; }
 
 h5 {
@@ -204,9 +204,10 @@ a, .fa, button {
     width: 240px; }
   .front h5, .front a, .back h5, .back a {
     padding: 30px 20px 0 20px;
-    font-weight: 500; }
+    font-weight: 400; }
   .front p, .back p {
     margin: 0;
+    font-weight: 300;
     font-size: 0.9rem;
     padding: 10px 10px 5px 20px; }
   .front a, .back a {
