@@ -51,6 +51,13 @@
     a {
         text-align: center;
     }
+
+    hr {
+        margin: 6px 20px;
+        height: 1px;
+        background-color: $brand;
+        border: 0px solid #000;
+    }
 }
 
 .back {transform: rotateY(180deg)}

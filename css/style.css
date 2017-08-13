@@ -105,7 +105,7 @@ a, .fa, button {
   cursor: pointer; }
 
 .light {
-  color: white;
+  color: rgba(0, 0, 0, 0.8);
   margin-bottom: 0; }
   .light span, .light a {
     color: white; }
@@ -127,7 +127,7 @@ button {
     -webkit-transform: scale(0.98);
             transform: scale(0.98); }
   button:hover {
-    background-color: #1d7ff2;
+    background-color: #187cf2;
     color: white; }
 
 .btn-small {
@@ -200,6 +200,11 @@ button {
     padding: 10px 10px 5px 20px; }
   .front a, .back a {
     text-align: center; }
+  .front hr, .back hr {
+    margin: 6px 20px;
+    height: 1px;
+    background-color: #3b92f8;
+    border: 0px solid #000; }
 
 .back {
   -webkit-transform: rotateY(180deg);
